@@ -8,6 +8,7 @@ import {
   Tooltip,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import "../styless/Resultados.css";
 
 // 1. REGISTRAR MÓDULOS DE CHART.JS
 // En React, Chart.js es "tree-shakeable", lo que significa que debes 

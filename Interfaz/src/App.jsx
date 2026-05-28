@@ -37,18 +37,17 @@ function App() {
   };
 
   return (
-    <>
-    <div className="app-layout">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Nav></Nav> 
-      <div className="page-container">
-        <main>
+      <div className="w-full">
+        <main className="max-w-310 my-10 mx-auto px-0 grid grid-cols-[360px_minmax(0,1fr)] gap-8 items-start">
           <Formulario onSimular={ejecutarSimulacion} isLoading={loading} />
           {resultados && <Resultados data={resultados} />}
         </main>
       </div>
     </div>
       
-    </>
+    
   );
 }
 
